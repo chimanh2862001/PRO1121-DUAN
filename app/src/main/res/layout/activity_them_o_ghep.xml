@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:text="Thông Người Ở Ghép"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/idOGhep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ID Người Ở Ghép"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:id="@+id/TieuDeOGhep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Họ Và Tên"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:text="Giới Tính"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/RadioNam"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/RadioNu"
+                    android:text="Nữ"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/giaThemGhep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mức Giá " />
+
+            <EditText
+                android:id="@+id/diaChiThemGhep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Địa Chỉ" />
+
+            <EditText
+                android:id="@+id/moTaThemGhep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mô Tả" />
+
+            <EditText
+                android:id="@+id/LienHeThemGhep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Liên Hệ" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnThemOGhep"
+                android:textSize="20sp"
+                android:text="Thêm"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnHuyOG"
+                android:textSize="20sp"
+                android:text="Huỷ"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

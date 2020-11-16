@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_timkiem"
+        android:title="Tìm Kiếm"
+        android:icon="@drawable/ic_baseline_home_work_24">
+    </item>
+
+    <item
+        android:id="@+id/nav_oghep"
+        android:title="Ở Ghép"
+        android:icon="@drawable/ic_baseline_widgets_24">
+    </item>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_account_circle_24">
+    </item>
+
+    <item
+        android:id="@+id/nav_save"
+        android:title="Lưu"
+        android:icon="@drawable/ic_baseline_favorite_24">
+    </item>
+
+</menu>

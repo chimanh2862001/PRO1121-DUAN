@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_gravity="center"
+                    android:text="Thông Tin Phòng"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ID Phòng"
+                    android:inputType="textPersonName" />
+
+                <Spinner
+                    android:id="@+id/loaiphong"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp" />
+
+                <EditText
+                    android:id="@+id/dientich"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Diện Tích (m^3)"
+                    android:inputType="number" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtphong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Số Phòng Ngủ "
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/vesinh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Só Phòng Vệ Sinh"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/gia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Mức Giá "
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:text="Địa Chỉ"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/thanhpho"
+                        android:layout_width="269dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Spinner
+                        android:id="@+id/quanhuyen"
+                        android:layout_width="273dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/tenphuong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Tên Phường"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/tenduong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Tên Đường"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/sonha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Số Nhà"
+                    android:inputType="number" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/kinhdo"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Kinh Do"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/vido"
+                        android:layout_width="159dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Vi Do"
+                        android:inputType="number" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="Tiện Ích"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tieude"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Tiêu Đề"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/lienhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Liên Hệ (SDT)"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/mota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapWords"
+                    android:hint="Mô Tả" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="311dp"
+                android:layout_gravity="center"
+
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/them"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ADD" />
+
+                <Button
+                    android:id="@+id/huy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Huy" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

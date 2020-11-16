@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietTro_Googlemap" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarChiTietPhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chi Tiết Phòng"
+                    android:textSize="25dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="629dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="410dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/header" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:id="@+id/tvXCTLoaiPhong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#ED0D0D"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:id="@+id/imgDienTichAdapter"
+                        android:src="@drawable/dientich"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"/>
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/tvDientich"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/imgPhongnguAdapter"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/bed"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"/>
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/tvBed"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/imgVeSinhAdapter"
+                        android:layout_marginLeft="8dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/vesinh"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"/>
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/tvToilet"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvMucGia"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:text="TextView"
+                        android:textColor="#FF3333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:text="/Tháng"
+                        android:textColor="#FF3333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    android:text="Mô Tả"
+                    android:textColor="#222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvTTMT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="Thông Tin Mô Tả"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    android:text="Địa Chỉ"
+                    android:textColor="#222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDiaChi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="dia "
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    android:text="Bản Đồ"
+                    android:textColor="#222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <fragment
+                    android:layout_marginTop="8dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    tools:context=".ChiTietTro_Googlemap" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    android:text="Ngày Đăng"
+                    android:textColor="#222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvNgayDang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="ngay dang"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    android:text="Cùng Tiêu Chí"
+                    android:textColor="#222222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <GridView
+                    android:numColumns="2"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/listGiongTieuChi"
+                    android:layout_width="match_parent"
+                    android:layout_height="470dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btnNhanTinOGhep"
+            android:layout_gravity="center"
+            android:text="Nhắn Tin"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnGoiOGhep"
+            android:layout_gravity="center"
+            android:text="Gọi"
+            android:layout_marginLeft="80dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
