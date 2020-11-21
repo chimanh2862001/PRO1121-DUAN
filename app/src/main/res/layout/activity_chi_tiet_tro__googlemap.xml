@@ -285,37 +285,31 @@
                     android:layout_height="450dp"/>
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/btnGoiOGhep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="80dp"
+                    android:text="Gọi"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:background="@drawable/border"
-        android:layout_width="match_parent"
-        android:layout_gravity="center"
-        android:layout_height="50dp">
 
-        <Button
-            android:id="@+id/btnNhanTinOGhep"
-            android:layout_gravity="center"
-            android:text="Nhắn Tin"
-            android:textSize="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/btnGoiOGhep"
-            android:layout_gravity="center"
-            android:text="Gọi"
-            android:layout_marginLeft="80dp"
-            android:textSize="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
 
 
 </LinearLayout>

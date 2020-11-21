@@ -109,10 +109,10 @@
 
             <Button
                 android:id="@+id/btnThemOGhep"
-                android:textSize="20sp"
-                android:text="Thêm"
                 android:layout_width="205dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="Đăng"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/btnHuyOG"

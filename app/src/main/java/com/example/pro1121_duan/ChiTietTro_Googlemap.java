@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ActionMenuView;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -45,7 +47,7 @@ public class ChiTietTro_Googlemap extends AppCompatActivity implements OnMapRead
     double kinhdo,vido;
     String loaiPhong, thanhPho, quanHuyen, tenDiaDiem, tenDuong, soNha, moTa, lienHe;
     Integer gia;
-
+    Button btnGoiOGhep;
     GridView gridView;
     Toolbar toolbar;
 
@@ -68,8 +70,10 @@ public class ChiTietTro_Googlemap extends AppCompatActivity implements OnMapRead
             }
         });
 
+
         Intent intent = getIntent();
         tvTitle=findViewById(R.id.tvTitle);
+        btnGoiOGhep=findViewById(R.id.btnGoiOGhep);
         tvDientich=findViewById(R.id.tvDientich);
         tvBed=findViewById(R.id.tvBed);
         tvToilet=findViewById(R.id.tvToilet);
@@ -92,7 +96,7 @@ public class ChiTietTro_Googlemap extends AppCompatActivity implements OnMapRead
         gia = Integer.parseInt(String.valueOf(intent.getExtras().getInt("Gia")));
 
         moTa = intent.getExtras().getString("MoTa");
-        lienHe = intent.getExtras().getString("LienHe");
+        lienHe ="tel:"+intent.getExtras().getString("LienHe");
 
         Integer dientich=Integer.parseInt(String.valueOf(intent.getExtras().getInt("Dientich")));
         Integer phongngu=Integer.parseInt(String.valueOf(intent.getExtras().getInt("Phongngu")));
@@ -150,6 +154,16 @@ public class ChiTietTro_Googlemap extends AppCompatActivity implements OnMapRead
                 startActivity(intent);
             }
         });
+
+        btnGoiOGhep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(Intent.ACTION_DIAL);
+                intent1.setData(Uri.parse(lienHe));
+                startActivity(intent1);
+            }
+        });
+
 
 
     }
